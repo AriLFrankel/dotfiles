@@ -1,0 +1,48 @@
+[submodule "vim/.vim/bundle/ale"]
+	path = vim/.vim/bundle/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/.vim/bundle/lightline.vim"]
+	path = vim/.vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/.vim/bundle/vim-commentary"]
+	path = vim/.vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/vim-surround"]
+	path = vim/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/bundle/ack.vim"]
+	path = vim/.vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/vim-obsession"]
+	path = vim/.vim/bundle/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
+[submodule "vim/.vim/bundle/ctrlp"]
+	path = vim/.vim/bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/.vim/bundle/vim-sneak"]
+	path = vim/.vim/bundle/vim-sneak
+	url = https://github.com/justinmk/vim-sneak.git
+[submodule "vim/.vim/bundle/vim-css3-syntax"]
+	path = vim/.vim/bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "vim/.vim/bundle/vim-styled-components"]
+	path = vim/.vim/bundle/vim-styled-components
+	url = https://github.com/styled-components/vim-styled-components.git
+[submodule "vim/.vim/bundle/vim-polyglot"]
+	path = vim/.vim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "vim/.vim/bundle/tender.vim"]
+	path = vim/.vim/bundle/tender.vim
+	url = https://github.com/jacoborus/tender.vim.git
+[submodule "vim/.vim/bundle/styled-components"]
+	path = vim/.vim/bundle/styled-components
+	url = https://github.com/styled-components/vim-styled-components.git
+[submodule "vim/.vim/bundle/hardmode"]
+	path = vim/.vim/bundle/hardmode
+	url = https://github.com/wikitopian/hardmode.git
+[submodule "vim/.vim/bundle/vim-hardtime"]
+	path = vim/.vim/bundle/vim-hardtime
+	url = https://github.com/takac/vim-hardtime.git
