@@ -19,6 +19,9 @@ command! -range Y <line1>,<line2>y|norm ``
 :map gs i<CR>
 " Prompt "(Y to save)" instead of erroring when you :q instead of :wq
 set confirm
+
+" Use while hovering over an imported variable to jump to that file and highlight the variable's name
+nnoremap <leader>gf gd$hhh<C-w>gfn<CR>
 " Tab Navigation {{{
 nnoremap gx :tabclose<CR>
 "}}}
@@ -41,8 +44,8 @@ set tabstop=2
 set backspace=indent,eol,start
 " }}}
 
-" folding {{{
 set foldenable
+  " folding {{{
 
 " open most folds by default
 set foldlevelstart=0
@@ -71,8 +74,8 @@ endfunction
 " }}}
 
 " }}}
-" Plugins {{{
 " Tender {{{
+  " Plugins {{{
 if (has("termguicolors"))
  set termguicolors
 endif
