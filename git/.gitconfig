@@ -1,0 +1,40 @@
+[credential]
+	helper = osxkeychain
+[alias]
+co = "!f() { git checkout $@;  }; f"
+br = branch
+ci = commit
+st = status
+dif = diff
+hed = "!git log --pretty=format:'%h' -n 1 | pbcopy"
+phed = "!git cherry-pick $(pbpaste)"
+hedfrom = !sh -c 'git checkout $1 && git hed && git checkout - && git phed'
+arc = "!f() { \
+        git push origin $1 --no-verify; \
+        git branch -D $1; \
+      }; f"
+pushf = push --force-with-lease
+rpullup = "!f() { \
+        git pull --rebase upstream $1; \
+      }; f"
+cane = commit --amend --no-edit --no-verify
+unstage = reset HEAD --
+wip = "!git add --all; git ci -m WIP --no-verify"
+unwip = "!git reset --soft HEAD~1; git unstage"
+pushf = push --force-with-lease
+rpull = "!git pull --rebase"
+nope = reset --hard
+wipcane = "!git add --all; git cane"
+cza = "!git add --all; git cz"
+ctrac = "!git checkout -t"
+ra = "!f() { \
+        git remote add $1 https://github.com/$2.git; \
+      }; f"
+cleandiff = "!git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1"
+fpush = "!git push --no-verify -f"
+
+[core]
+	excludesfile = /Users/arifrankel/git/.gitignore_global
+[user]
+	name = arilfrankel
+	email = ari.l.frankel@gmail.com
