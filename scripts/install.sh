@@ -48,35 +48,43 @@ brew cask install google-chrome
 brew cask install docker
 brew cask install iterm2
 brew cask install moom
-
-
-# n requires resourcing or reloading before first use
-source ~/.bash_profile
-
-# Upgrade node
-printf "\n>> Install Node LTS using n\n"
-n lts
-
-# Remove unused versions of node
-n prune
-
-# Install some global packages
-printf "\n>> Install global npm packages\n"
-npm i -g nodemon commitizen flow-bin eslint babel-eslint eslint-plugin-flowtype jest
-
-# Skip least used installs
+# brew cask install slack
 # brew install mongodb
 # brew install postgresql
-# brew cask install slack
 # brew cask install whatsapp
 
-# Install oh-my-zsh
-  printf "\n>> Installing oh-my-zsh...\n"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# .NET and VSCode
+# brew cask install dotnet-sdk
 
-# Put my .zshrc back
- printf "\n>> Putting back the original .zshrc...\n"
-[ -f ~/.zshrc.pre-oh-my-zsh ] && mv -f  ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+# brew cask install visual-studio-code
+# code --install-extension sdras.night-owl
+# code --install-exntension ms-vscode.csharp
+# code --install-exntension jmrog.vscode-nuget-package-manager
+# code --install-exntension peterjausovec.vscode-docker
+
+# code --install-exntension jchannon.csharpextensions
+# cp ../code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+
+# JS
+
+# Install n for managing Node versions (using npm)
+# printf "\n>> Install n\n"
+# -y automates installation, -n avoids modifying bash_profile
+# curl -L https://git.io/n-install | bash -s -- -n -y
+
+# n requires resourcing or reloading before first use
+# source ~/.bash_profile
+
+# Upgrade node
+# printf "\n>> Install Node LTS using n\n"
+# n lts
+
+# Remove unused versions of node
+# n prune
+
+# Install some global packages
+# printf "\n>> Install global npm packages\n"
+# npm i -g  yarn nodemon commitizen flow-bin eslint babel-eslint eslint-plugin-flowtype jest
 
 # Install fonts that will get used by iterm
   printf "\n>> Installing powerline fonts ...\n"
