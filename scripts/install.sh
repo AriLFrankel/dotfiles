@@ -48,9 +48,8 @@ brew cask install google-chrome
 brew cask install docker
 brew cask install iterm2
 brew cask install moom
+brew cask install tableplus
 # brew cask install slack
-# brew install mongodb
-# brew install postgresql
 # brew cask install whatsapp
 
 # .NET and VSCode
@@ -58,12 +57,25 @@ brew cask install moom
 
 # brew cask install visual-studio-code
 # code --install-extension sdras.night-owl
+
 # code --install-exntension ms-vscode.csharp
+# code --install-exntension jchannon.csharpextensions
 # code --install-exntension jmrog.vscode-nuget-package-manager
+
 # code --install-exntension peterjausovec.vscode-docker
 
-# code --install-exntension jchannon.csharpextensions
+# code --install-extension mikael.angular-beastcode
+# code --install-extension infinity1207.angular2-switcher
+
+# code --install-extension formulahendry.auto-close-tag
+# code --install-extension coenraads.bracket-pair-colorizer
+# code --install-extension christian-kohler.path-intellisense
+# code --install-extension esbenp.prettier-vscode
+# code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+
+
 # cp ../code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+# cp ../code/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 
 # JS
 
