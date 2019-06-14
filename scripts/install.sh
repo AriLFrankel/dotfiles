@@ -49,6 +49,7 @@ brew cask install docker
 brew cask install iterm2
 brew cask install moom
 brew cask install tableplus
+brew cask install spotify
 # brew cask install slack
 # brew cask install whatsapp
 
