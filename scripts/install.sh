@@ -67,6 +67,7 @@ brew cask install spotify
 
 # code --install-extension mikael.angular-beastcode
 # code --install-extension infinity1207.angular2-switcher
+# code --install-extension steoates.autoimport
 
 # code --install-extension formulahendry.auto-close-tag
 # code --install-extension coenraads.bracket-pair-colorizer
