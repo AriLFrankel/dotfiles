@@ -97,7 +97,7 @@ brew cask install spotify
 
 # Install some global packages
 # printf "\n>> Install global npm packages\n"
-# npm i -g  yarn nodemon commitizen flow-bin eslint babel-eslint eslint-plugin-flowtype jest
+# npm i -g  yarn nodemon commitizen flow-bin eslint babel-eslint eslint-plugin-flowtype jest typescript angular-cli
 
 # Install fonts that will get used by iterm
   printf "\n>> Installing powerline fonts ...\n"
