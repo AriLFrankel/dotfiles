@@ -1,4 +1,6 @@
 {
     "workbench.colorTheme": "Night Owl",
-    "workbench.settings.editor": "json"
+    "workbench.settings.editor": "json",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
 }
