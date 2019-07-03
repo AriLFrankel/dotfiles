@@ -56,7 +56,6 @@ alias desktop="cd ~/Desktop"
 alias wip="cd ~/Desktop/wip"
 alias dotfiles="cd ~/dotfiles"
 alias notes="cd ~/Documents/notes"
-alias merlin="cd ~/Desktop/wip/merlin"
 
 # give tab completion to complex git aliases
 function _git_arc() {
