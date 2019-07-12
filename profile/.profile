@@ -2,6 +2,9 @@
 # Aliases
 #
 
+# ts
+export TF_AUTO_SAVE_CREDENTIALS='1'
+
 # See symlinks in node_modules
 alias links='ls -l node_modules | grep ^l'
 

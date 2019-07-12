@@ -79,6 +79,12 @@ brew cask install spotify
 # cp ../code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 # cp ../code/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 
+# .NET and rider
+# brew cask install rider
+# brew install tee-clc
+# printf "\033[1;31mPlease make sure to install Java SDK 8 here https://www.oracle.com/technetwork/java/javase/documentation/jdk8-doc-downloads-2133158.html and not latest version\033[0m\n";
+
+
 # JS
 
 # Install n for managing Node versions (using npm)
