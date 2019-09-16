@@ -46,3 +46,6 @@
 [submodule "vim/.vim/bundle/vim-hardtime"]
 	path = vim/.vim/bundle/vim-hardtime
 	url = https://github.com/takac/vim-hardtime.git
+[submodule "vim/.vim/bundle/omnisharp-vim"]
+	path = vim/.vim/bundle/omnisharp-vim
+	url = git://github.com/OmniSharp/omnisharp-vim

@@ -74,8 +74,57 @@ endfunction
 " }}}
 
 " }}}
-" Tender {{{
-  " Plugins {{{
+" Plugins {{{
+  " OmniSharp {{{
+    let g:OmniSharp_server_stdio = 1
+    filetype indent plugin on
+    let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim for selector UI
+    let g:OmniSharp_highlight_types = 2 "syntax highlighting with OmniSharp
+
+    " Timeout in seconds to wait for a response from the server
+    let g:OmniSharp_timeout = 5
+
+    " Don't autoselect first omnicomplete option, show options even if there is only
+    " one (so the preview documentation is accessible). Remove 'preview' if you
+    " don't want to see any documentation whatsoever.
+    set completeopt=longest,menuone,preview
+
+    set previewheight=5
+
+augroup omnisharp_commands
+    autocmd!
+
+    " Show type information automatically when the cursor stops moving
+    autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
+
+    " The following commands are contextual, based on the cursor position.
+    autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+
+    " Finds members in the current buffer
+    autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
+
+    autocmd FileType cs nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>tt :OmniSharpTypeLookup<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
+    autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
+    autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
+
+    " Navigate up and down by method/property/field
+    autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
+    autocmd FileType cs nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
+
+    " Find all code errors/warnings for the current solution and populate the quickfix window
+    autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
+augroup END
+
+  " Rename without dialog - with cursor on the symbol to rename: `:Rename newname`
+  command! -nargs=1 Rename :call OmniSharp#RenameTo("<args>")
+
+  " }}}
+  " Tender {{{
 if (has("termguicolors"))
  set termguicolors
 endif
@@ -105,7 +154,7 @@ let g:sneak#label = 1
 " }}}
 
 " ALE {{{
-let g:ale_linters = { 'javascript': ['eslint', 'flow'] }
+let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'cs': ['OmniSharp'] }
 " Don't run linters on opening a file
 
 " ALE: Set up fixing
