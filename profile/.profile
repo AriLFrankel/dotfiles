@@ -63,6 +63,8 @@ note ()
 # Shortcuts
 alias desktop="cd ~/Desktop"
 alias wip="cd ~/Desktop/wip"
+alias wholefoods="cd ~/Desktop/wip/wholefoods"
+alias innerview="cd ~/Desktop/wip/wholefoods/2020"
 alias dotfiles="cd ~/dotfiles"
 alias notes="cd ~/Documents/notes"
 
