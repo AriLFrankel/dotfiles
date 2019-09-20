@@ -22,6 +22,9 @@ then
   fi
 fi
 
+# Install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -Y
+
 # Make sure we’re using the latest Homebrew.
 printf "\n>> Update Brew\n"
 brew update
@@ -41,7 +44,7 @@ brew install stow
 brew install vim --with-override-system-vi
 brew install the_silver_searcher
 brew install watchman
-brew install zsh zsh-completions
+brew install zsh-completions
 brew install ack
 brew install n
 brew cask install google-chrome
