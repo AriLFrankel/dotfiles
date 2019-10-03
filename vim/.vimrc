@@ -195,6 +195,7 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let NERDTreeShowLineNumbers=1
+let NERDTreeWinSize=60
 " }}}
 
 " lightline {{{
