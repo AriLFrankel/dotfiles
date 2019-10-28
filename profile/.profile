@@ -72,3 +72,12 @@ alias notes="cd ~/Documents/notes"
 function _git_arc() {
   _git_branch
 }
+
+# recursive find and delete
+deleteall ()
+{
+  find . -name "1" -type -f -delete
+}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
