@@ -8,7 +8,7 @@ $ git clone --recurse-submodules https://github.com/arilfrankel/dotfiles.git ~/d
 # Stow
 $ cd ~/dotfiles
 
-$ stow bash git iterm profile vim zsh
+$ stow bash git iterm profile vim
 
 # Install
 $ cd ~/dotfiles

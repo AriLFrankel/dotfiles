@@ -79,5 +79,4 @@ deleteall ()
   find . -name "1" -type -f -delete
 }
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
