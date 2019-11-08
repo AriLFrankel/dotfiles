@@ -47,9 +47,9 @@ brew install watchman
 brew install zsh-completions
 brew install ack
 brew install n
+brew install tmux
 brew cask install google-chrome
 brew cask install docker
-brew cask install iterm2
 # brew cask install moom
 brew cask install tableplus
 brew cask install spotify
