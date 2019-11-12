@@ -1,5 +1,4 @@
 source ~/.profile
-source ~/.profile_local
 source ~/.aliases.sh
 source ~/.bash-powerline.sh
 source ~/.git-completion.sh
