@@ -1,4 +1,9 @@
 source ~/.profile
+source ~/.profile_local
+source ~/.aliases.sh
+source ~/.bash-powerline.sh
+source ~/.git-completion.sh
+
 # TODO make sure this file exists
 if [ ! -e "~/.profile_local" ]; then
   source ~/.profile_local
@@ -19,3 +24,14 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+# Add tab completion for many Bash commands
+if test $(which brew)
+then
+  brewdir=`brew --prefix`
+  if [ -f "$brewdir/etc/bash_completion" ]; then
+    source "$brewdir/etc/bash_completion"
+  fi;
+  unset brewdir
+fi
+
