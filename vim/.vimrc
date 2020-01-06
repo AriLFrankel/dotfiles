@@ -1,5 +1,7 @@
 execute pathogen#infect()
 " vim  {{{
+:vnoremap <C-c> "*y
+:vnoremap <C-d> "*d"
 let mapleader = "\ "
 set scrolloff=10
 syntax enable " Turn on syntax highlighting
