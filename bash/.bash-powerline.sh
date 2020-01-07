@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 ## Uncomment to disable git info
-POWERLINE_GIT=0
+# POWERLINE_GIT=0
 
 __powerline() {
     # Colorscheme
