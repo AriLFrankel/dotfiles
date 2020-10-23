@@ -33,6 +33,11 @@ brew update
 printf "\n>> Upgrade Brew\n"
 brew upgrade
 
+# Install ZSH
+printf "\n>> Install zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -Y
+
+
 # # Make not shallow
 printf "\n>> Make homebrew not shallow\n"
 git -C "$(brew --repo homebrew/core)" fetch --unshallow
@@ -55,7 +60,6 @@ brew cask install tableplus
 brew cask install spotify
 brew cask install slack
 brew cask install whatsapp
-brew cask install dotnet-sdk
 brew cask install visual-studio-code
 
 printf "\n>> Install vscode plugins \n"
@@ -91,7 +95,7 @@ npm i -g n yarn nodemon flow-bin eslint babel-eslint eslint-plugin-flowtype  typ
 
 # Upgrade node
 printf "\n>> Install Node LTS using n\n"
-n lts
+sudo n lts
 
 # Remove outdated versions from the cellar.
 printf "\n>> Cleanup brew\n"
