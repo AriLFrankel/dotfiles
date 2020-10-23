@@ -1,4 +1,3 @@
-source ~/.profile
 source ~/.aliases.sh
 source ~/.bash-powerline.sh
 source ~/.git-completion.sh
