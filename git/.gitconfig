@@ -38,3 +38,6 @@ fpush = "!git push --no-verify -f"
 [user]
 	name = arilfrankel
 	email = ari.l.frankel@gmail.com
+	signingkey = 67203B258D78B995ECE3F45F3CC16972ACA8CCC2
+[url "git@github.com:"]
+	insteadof = https://github.com/
