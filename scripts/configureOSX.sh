@@ -70,6 +70,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
+# Disable itunes from opening on push play button
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
