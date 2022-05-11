@@ -1,5 +1,7 @@
 source ~/.aliases.sh
 source ~/.bash-powerline.sh
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export GPG_TTY=$(tty)
 
 if [ ! -e "~/.wpe_aliases.sh" ]; then
   source ~/.wpe_aliases.sh
@@ -19,3 +21,4 @@ then
   unset brewdir
 fi
 
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
