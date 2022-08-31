@@ -4,6 +4,10 @@ source ~/.bash_profile
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # n
 export PATH=$HOME/n/bin:$PATH
+# kube-ps1
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
+
 ZSH_DISABLE_COMPFIX=true
 ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -65,7 +69,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

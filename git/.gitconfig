@@ -34,10 +34,12 @@ cleandiff = "!git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1"
 fpush = "!git push --no-verify -f"
 
 [core]
-	excludesfile = /Users/arifrankel/git/.gitignore_global
+	excludesfile = /Users/ari.frankel/.gitignore_global
 [user]
 	name = arilfrankel
 	email = ari.l.frankel@gmail.com
 	signingkey = 67203B258D78B995ECE3F45F3CC16972ACA8CCC2
 [url "git@github.com:"]
 	insteadof = https://github.com/
+[http]
+	sslVerify = true

@@ -33,7 +33,6 @@ tags
 *.jar
 *.rar
 *.tar
-*.zip
 
 # Logs and databases #
 ######################
@@ -73,3 +72,6 @@ tags
 # Persistent undo #
 ###################
 [._]*.un~
+# VSCode #
+##########
+.vscode

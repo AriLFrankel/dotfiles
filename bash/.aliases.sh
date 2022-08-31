@@ -53,7 +53,6 @@ alias wip="cd ~/Documents/wip"
 alias wholefoods="cd ~/Desktop/wip/wholefoods"
 alias innerview="cd ~/Desktop/wip/wholefoods/2020"
 alias dotfiles="cd ~/dotfiles"
-alias notes="cd ~/.notable/notes"
 
 # give tab completion to complex git aliases
 function _git_arc() {
@@ -66,10 +65,16 @@ deleteall ()
   find . -name "1" -type -f -delete
 }
 
-# notable open a file
-note()
-{
-  open "/Users/$USER/.notable/notes/$1.md" -a "macdown"
-}
-
 alias ipython='python -m IPython'
+
+# eks
+alias eks='aws-okta exec eksclusters -- kubectl'
+alias dev-eks='aws-okta exec dev -- kubectl' # For dev clusters
+
+# terraform
+
+alias tf='terraform'
+
+#hobo-cm
+alias hobo='VAGRANT_CWD=$WPE_HOME/hobo-cm aws-okta exec users -- vagrant'
+
